@@ -1,0 +1,14 @@
+.menu-item {
+    list-style: none;
+    margin: 10px;
+}
+
+.menu-item a {
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.menu-item a:visited {
+    color: white;
+}

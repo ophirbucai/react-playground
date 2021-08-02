@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./index.css";
+import RandomColorSquare from "./RandomColorSquare/RandomColorSquare";
+import Menu from "./Menu/Menu";
+import MenuItem from "./Menu/MenuItem/MenuItem";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <Menu>
+            <MenuItem link="https://www.google.co.il/en" text="Google-IL (English)" />
+            <MenuItem link="https://www.google.co.il/he" text="Google-IL (Hebrew)" />
+            <MenuItem link="https://www.google.com/en" text="Google-US (English)" />
+        </Menu>
+        <RandomColorSquare />
     </div>
   );
 }
